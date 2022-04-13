@@ -6,14 +6,14 @@ const Service = ({service}) => {
     const { name, img, description, price } = service;
 
     return (
-        <div className='service'>
+        <div className='service mt-5'>
             <h2>this is single service:{name}</h2>
-            <img src={img} alt="" />
+            <img className='w-100' src={img} alt="" />
             <p>price:{price}</p>
             <p>
                 <small>details:{description}</small>
             </p>
-            <button>book {name}</button>
+            <button className='btn btn-primary'>book {name}</button>
 
         </div>
     );
