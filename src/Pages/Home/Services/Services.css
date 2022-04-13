@@ -1,0 +1,21 @@
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.services-tittle {
+    text-align: center;
+    color: brown;
+}
+
+.services-container img {
+    height: 400px;
+    width: 400px;
+   
+}
+@media only screen and (max-width:576px){
+    .services-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
